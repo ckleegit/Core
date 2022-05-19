@@ -25,9 +25,5 @@ public class OrderApp {
         System.out.println("order = " + order.getItemPrice());
         System.out.println("DiscountPrice = " + order.getDiscountPrice());
         System.out.println("order.calculatePrice = " + order.calculatePrice());
-        //이창근 테스트
-        //이창근 맥에서 입력함
-        //이창근 윈도우에서 입력함
-        //이창근 갤럭시북에서 입력함 테스트
     }
 }
