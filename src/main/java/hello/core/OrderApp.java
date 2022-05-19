@@ -25,6 +25,6 @@ public class OrderApp {
         System.out.println("order = " + order.getItemPrice());
         System.out.println("DiscountPrice = " + order.getDiscountPrice());
         System.out.println("order.calculatePrice = " + order.calculatePrice());
-
+        //이창근 테스트
     }
 }
