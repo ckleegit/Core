@@ -21,3 +21,4 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+// https://github.com/ckleegit/Core.git
