@@ -3,6 +3,7 @@ package hello.core;
 import hello.core.member.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class MemberApp {
     public static void main(String[] args) {
@@ -11,7 +12,8 @@ public class MemberApp {
 //        MemberService memberService = new MemberServiceImpl();
 
         //AppConfig 정보를 스프링 컨테이너에 등록 후 관리한다.
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+//        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext applicationContext = new GenericXmlApplicationContext("appConfig.xml");
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
 
