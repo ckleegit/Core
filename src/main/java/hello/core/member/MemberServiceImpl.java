@@ -1,9 +1,11 @@
 package hello.core.member;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("membersevice")
+@RequiredArgsConstructor
 //회원 서비스 구현체
 public class MemberServiceImpl implements MemberService {
 
@@ -12,10 +14,10 @@ public class MemberServiceImpl implements MemberService {
     //추상화에도 의존, 구현체에도 의존 -> DIP 위반
     private final MemberRepository memberRepository;
 
-    @Autowired //ac.getBean(MemberRepository.class)
-    public MemberServiceImpl(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
+//    @Autowired //ac.getBean(MemberRepository.class)
+//    public MemberServiceImpl(MemberRepository memberRepository) {
+//        this.memberRepository = memberRepository;
+//    }
 
     @Override
     public void join(Member member) {
