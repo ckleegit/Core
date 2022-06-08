@@ -6,5 +6,6 @@ public class NetworkClient {
 
     public NetworkClient() {
         System.out.println("생성자 호");
+//        test
     }
 }
